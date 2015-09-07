@@ -1,0 +1,10 @@
+<div id="{{block.id}}" class="int-header {{block.class}}" style="background-image: url('{{block.alt_path}}/1000.jpg'); min-height: 80vh;">
+	<div class="int-header__text-wrapper">
+		{{#block.kicker}}<h3 class="int-text-shadow">{{.}}</h3>{{/block.kicker}}
+		<div class="int-text-bar lede"></div>
+		<h1 class="int-text-shadow">{{block.headline}}</h1>
+		{{#block.copy}}<div class="int-text-bar"></div><h3 class="int-text-shadow">{{.}}</h3>{{/block.copy}}
+	</div>
+	{{#block.credit}}<div class="int-header__credit hide-mobile"><div class="int-outer">{{.}}</div></div>{{/block.credit}}
+</div>
+{{#block.credit}}<div class="int-wrapper int-header__credit-mobile show-mobile"><div class="int-outer">{{.}}</div></div>{{/block.credit}}

@@ -1,0 +1,17 @@
+$egyptian: "Guardian Egyptian Web";
+$text-sans: "Guardian Text Sans Web";
+
+@import "fonts";
+@import "mq";
+@import "general";
+
+// blocks
+@import "blocks/header";
+@import "blocks/copy";
+@import "blocks/header";
+@import "blocks/imgWithAudio";
+@import "blocks/pullbyline";
+@import "blocks/related";
+@import "blocks/scrollGallery";
+@import "blocks/verticalSlideshow";
+@import "blocks/video";

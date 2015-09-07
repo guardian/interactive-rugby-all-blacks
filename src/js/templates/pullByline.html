@@ -1,0 +1,36 @@
+<div class="int-inner int-pullbyline {{block.pullbyline}}">
+	<div class="int-pullbyline__block">
+		{{#config.sponsorship}}
+		<div class="int-pullbyline__sponsorship">
+			<div class="ad-slot--paid-for-badge__inner">
+			Sponsored by:
+			<a href="http://rugby.heineken.com/" class="ad-slot--paid-for-badge__link">
+			<img class="ad-slot--paid-for-badge__logo" src="https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKDTy4TENBABGAEyCLsVFeBzJ9Dy">
+			</a>
+			<a href="http://www.theguardian.com/sponsored-content" class="ad-slot--paid-for-badge__help">About this content</a>
+</div>
+		</div>
+		{{/config.sponsorship}}
+		{{#block.byline_photos}}<img class="byline-pic" src="{{.}}">{{/block.byline_photos}}
+		<div class="int-pullbyline__byline">
+			{{#block.byline}}<span><a href="{{link}}">{{name}}</a></span>{{/block.byline}}
+			<div class="int-pullbyline__shares show-until-desktop">
+				<div class="share-buttons" id="int-share-buttons">
+					<a href="https://www.facebook.com/sharer/sharer.php?u={{block.share_url}}/sfb" target="_blank" class="share-button share-button--facebook"></a>
+					<a href="https://twitter.com/intent/tweet?text={{block.share_text}}&url={{block.share_url}}/stw" target="_blank" class="share-button share-button--twitter"></a>
+					<a href="mailto:?subject={{block.share_text}}&body={{block.share_url}}/sbl" target="_blank" class="share-button share-button--email"></a>
+				</div>
+			</div>
+		</div>
+		<div class="int-pullbyline__date">
+			{{block.date_published}}
+		</div>
+		<div class="int-pullbyline__shares hide-until-desktop">
+			<div class="share-buttons" id="int-share-buttons">
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{block.share_url}}/sfb" target="_blank" class="share-button share-button--facebook"></a>
+				<a href="https://twitter.com/intent/tweet?text={{block.share_text}}&url={{block.share_url}}/stw" target="_blank" class="share-button share-button--twitter"></a>
+				<a href="mailto:?subject={{block.share_text}}&body={{block.share_url}}/sbl" target="_blank" class="share-button share-button--email"></a>
+			</div>
+		</div>
+	</div>
+</div>
